@@ -25,12 +25,17 @@ export const networkConfig: networkConfigInfo = {
         raffleEntranceFee: ethers.utils.parseEther('0.01').toString(),
         gasLane: '0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15',
         subscriptionId: '0',
+        callbackGasLimit: '500000',
+        keepersUpdateInterval: '30',
     },
     31337: {
         name: 'hardhat',
         raffleEntranceFee: ethers.utils.parseEther('0.01').toString(),
         gasLane: '0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15',
+        callbackGasLimit: '500000',
+        keepersUpdateInterval: '30',
     },
 }
 
 export const developmentChains = ['hardhat', 'localhost']
+export const VERIFICATION_BLOCK_CONFIRMATIONS = 6
